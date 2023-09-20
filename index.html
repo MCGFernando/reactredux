@@ -16,11 +16,23 @@
                 name: 'Mario',
                 age:30
             }
+            handleClick(e){
+                console.log(e)
+            }
+            handleMouseOver(e){
+                console.log(e)
+            }
+            handleCopy(e){
+                console.log('Try being orininal for once!')
+            }
             render(){
                 return(
                     <div className="app-content">
                         <h1>Hey, ninjas</h1>
                         <p>My name is {this.state.name} and iam {this.state.age}</p>
+                        <button onClick={this.handleClick}>Click me</button>
+                        <button onMouseOver={this.handleMouseOver}>Hover me</button>
+                        <p onCopy={this.handleCopy}>Whta we think, we become</p>
                     </div>
 
                 )
