@@ -16,13 +16,18 @@
                 name: 'Mario',
                 age:30
             }
-            handleClick(e){
+            handleClick = (e) =>{
+                //console.log(e)
+                this.setState({
+                    name: "Yoshi",
+                    age:25
+                })
+                console.log(this.state)
+            }
+            handleMouseOver = (e) =>{
                 console.log(e)
             }
-            handleMouseOver(e){
-                console.log(e)
-            }
-            handleCopy(e){
+            handleCopy = (e) =>{
                 console.log('Try being orininal for once!')
             }
             render(){
